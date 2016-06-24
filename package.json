@@ -10,15 +10,16 @@
         "install-to-parent": "export ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix = $(ORIGINAL_NPM_PREFIX_PATH)"
     },
     "dependencies": {
-        "babel-core": "6.7.7",
-        "babel-eslint": "6.0.4",
-        "babel-preset-es2015": "6.6.0",
+        "babel-core": "6.10.4",
+        "babel-eslint": "6.1.0",
+        "babel-preset-es2015": "6.9.0",
         "babel-preset-react": "6.5.0",
         "babel-preset-stage-1": "6.5.0",
-        "eslint-plugin-react": "5.0.1",
-        "eslint": "2.8.0",
-        "react": "15.0.1",
-        "react-addons-test-utils": "15.0.1"
+        "eslint-config-keystone": "2.4.0",
+        "eslint-plugin-react": "5.2.2",
+        "eslint": "2.13.1",
+        "react": "15.1.0",
+        "react-addons-test-utils": "15.1.0"
     },
     "devDependencies": {
         "gulp": "^3.9.1",

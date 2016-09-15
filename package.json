@@ -1,13 +1,13 @@
 {
     "name": "regional-node-modules",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "",
     "repository": "git@github.com:matthewstyers/react-editor-regional-dependencies.git",
     "author": "Matthew Styers",
     "license": "MIT",
     "scripts": {
-        "install-gulp": "NPM_CONFIG_prefix=/usr/local npm i -g gulp; npm i -D gulp gulp-install",
-        "install-to-parent": "export ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix = $(ORIGINAL_NPM_PREFIX_PATH)"
+        "install-gulp": "NPM_CONFIG_PREFIX=/usr/local npm i -g gulp; npm i -D gulp gulp-install",
+        "install-to-parent": "ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix /usr/local"
     },
     "dependencies": {
         "babel-core": "6.14.0",
@@ -18,6 +18,7 @@
         "babel-preset-stage-1": "6.13.0",
         "eslint-config-keystone": "2.4.0",
         "eslint-plugin-react": "6.2.0",
+        "eslint-plugin-react-native": "2.0.0",
         "eslint": "3.4.0",
         "react": "15.3.1",
         "react-addons-test-utils": "15.3.1"

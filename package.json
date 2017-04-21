@@ -1,31 +1,34 @@
 {
-    "name": "regional-node-modules",
-    "version": "0.0.5",
-    "description": "",
-    "repository": "git@github.com:matthewstyers/react-editor-regional-dependencies.git",
-    "author": "Matthew Styers",
-    "license": "MIT",
-    "scripts": {
-        "install-gulp": "NPM_CONFIG_PREFIX=/usr/local npm i -g gulp; npm i -D gulp gulp-install",
-        "install-to-parent": "ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix /usr/local"
-    },
-    "dependencies": {
-        "babel-core": "6.17.0",
-        "babel-eslint": "7.0.0",
-        "babel-preset-es2015": "6.16.0",
-        "babel-preset-react": "6.16.0",
-        "babel-preset-react-native": "1.9.0",
-        "babel-preset-stage-1": "6.16.0",
-        "eslint-config-keystone": "2.4.0",
-        "eslint-plugin-react": "6.4.1",
-        "eslint-plugin-react-native": "2.0.0",
-        "eslint": "3.8.0",
-        "react": "15.3.2",
-        "react-addons-test-utils": "15.3.2"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-install": "^0.6.0",
-        "eslint-plugin-react-native": "^2.0.0"
-    }
+  "name": "regional-node-modules",
+  "version": "0.0.5",
+  "description": "",
+  "repository": "git@github.com:matthewstyers/react-editor-regional-dependencies.git",
+  "author": "Matthew Styers",
+  "license": "MIT",
+  "scripts": {
+    "install-gulp": "NPM_CONFIG_PREFIX=/usr/local npm i -g gulp; npm i -D gulp gulp-install",
+    "install-to-parent": "ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix /usr/local",
+    "update": "ncu -u",
+    "postupdate": "gulp install",
+    "update:dry": "ncu"
+  },
+  "dependencies": {
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-native": "1.9.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-preset-env": "2.0.0-alpha.7",
+    "eslint": "3.19.0",
+    "eslint-config-keystone": "3.0.0",
+    "eslint-plugin-react": "6.10.3",
+    "eslint-plugin-react-native": "2.3.2",
+    "flow-bin": "0.44.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-native": "2.3.2",
+    "gulp": "3.9.1",
+    "gulp-install": "1.1.0"
+  }
 }

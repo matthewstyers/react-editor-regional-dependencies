@@ -6,10 +6,10 @@
   "author": "Matthew Styers",
   "license": "MIT",
   "scripts": {
-    "install-gulp": "NPM_CONFIG_PREFIX=/usr/local npm i -g gulp; npm i -D gulp gulp-install",
-    "install-to-parent": "ORIGINAL_NPM_PREFIX_PATH=$(npm config get prefix) && NODE_ENV=production npm i -C $(pwd)/.. && npm config set prefix /usr/local",
-    "update": "ncu -u",
-    "postupdate": "gulp install",
+    "clean": "rm -rf ../node_modules; rm -f ../package.json package-lock.json",
+    "preupdate": "npm run clean && npm i -g npm-check-updates",
+    "update": "ncu -u; npm i",
+    "postupdate": "mkdir ../node_modules; mv ./node_modules/ ../; cp -a ./package.json ../",
     "update:dry": "ncu"
   },
   "dependencies": {
@@ -25,10 +25,5 @@
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-react-native": "2.3.2",
     "flow-bin": "0.49.1"
-  },
-  "devDependencies": {
-    "eslint-plugin-react-native": "2.3.2",
-    "gulp": "^3.9.1",
-    "gulp-install": "^1.1.0"
   }
 }

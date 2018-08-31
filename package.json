@@ -13,15 +13,18 @@
     "update:dry": "ncu"
   },
   "dependencies": {
-    "babel-core": "6.26.0",
-    "babel-eslint": "8.1.2",
+    "babel-core": "6.26.3",
+    "babel-eslint": "9.0.0",
     "babel-preset-env": "2.0.0-alpha.7",
     "babel-preset-react": "6.24.1",
     "babel-preset-react-native": "4.0.0",
     "babel-preset-stage-1": "6.24.1",
-    "eslint": "4.15.0",
-    "eslint-plugin-react": "7.5.1",
-    "eslint-plugin-react-native": "3.2.0",
-    "flow-bin": "0.63.1"
+    "eslint": "5.4.0",
+    "eslint-plugin-react": "7.11.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react-native": "3.2.1",
+    "flow-bin": "0.79.1"
   }
 }

@@ -14,18 +14,16 @@
     "update-dry": "ncu"
   },
   "dependencies": {
+    "@babel/core": "7.17.5",
     "@babel/eslint-parser": "7.17.0",
-    "babel-core": "6.26.3",
+    "@babel/eslint-plugin": "^7.16.5",
     "babel-preset-env": "2.0.0-alpha.7",
     "babel-preset-react": "6.24.1",
     "babel-preset-react-native": "4.0.1",
-    "babel-preset-stage-1": "6.24.1",
     "eslint": "8.9.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-keystone": "3.0.0",
-    "eslint-config-keystone-react": "1.0.0",
     "eslint-config-postcss": "4.0.0",
-    "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
@@ -35,6 +33,5 @@
     "prettier": "2.5.1"
   },
   "devDependencies": {
-    "@babel/core": "7.17.5"
   }
 }
